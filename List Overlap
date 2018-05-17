@@ -1,0 +1,46 @@
+
+RACTICE PYTHON
+https://www.practicepython.org
+
+List Overlap
+
+Take two lists, say for example these two:
+
+  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+  b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+and write a program that returns a list that contains only the elements that are common between
+the lists (without duplicates).
+Make sure your program works on two lists of different sizes.
+
+Extras:
+
+1.Randomly generate two lists to test this
+
+2.Write this in one line of Python
+
+
+----Solution----
+
+def no_duplicates(a,b):
+    return list(set([n for n in a if n in a and n in b]))
+
+print(no_duplicates(a,b))
+
+
+----Extras----
+
+
+
+import random
+
+first_list_len = random.randrange(1,20)
+second_list_len = random.randrange(1,20)
+
+a=[]
+b=[]
+
+for n in range(first_list_len):
+    a.append(random.randrange(1,100))
+for n in range(second_list_len):
+    b.append(random.randrange(1,100))
+    
