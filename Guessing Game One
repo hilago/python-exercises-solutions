@@ -1,0 +1,63 @@
+
+RACTICE PYTHON
+https://www.practicepython.org
+
+Guessing Game One
+
+Generate a random number between 1 and 9 (including 1 and 9).
+Ask the user to guess the number, then tell them whether they guessed too low,
+too high, or exactly right.
+(Hint: remember to use the user input lessons from the very first exercise)
+
+Extras:
+
+Keep the game going until the user types “exit”
+Keep track of how many guesses the user has taken, and when the game ends, print this out.
+
+----Solution----
+
+import random
+
+computer_random_num =random.randint(1,9)
+
+ueser_guess = int(input("what is your guss: "))
+
+if ueser_guess > computer_random_num:
+    print("your guess is too high")
+if ueser_guess < computer_random_num:
+    print("your guess is too low")
+if ueser_guess == computer_random_num:
+    print("your guess is right!!!!")
+	
+----Extras----
+import random
+
+def guessing_game():
+    computer_random_num = random.randint(1, 9)
+    count = 1
+    ueser_guess=0
+    while  ueser_guess != "exit" and ueser_guess != computer_random_num:
+     ueser_guess = input("what is your guss: ")
+
+     if ueser_guess == "exit":
+        break
+
+     ueser_guess = int(ueser_guess)
+
+     if ueser_guess > computer_random_num:
+        print("your guess is too high")
+        count += 1
+
+     if ueser_guess < computer_random_num:
+        print("your guess is too low")
+        count += 1
+
+     if ueser_guess == computer_random_num:
+        print("your guess is right!!!!")
+    
+    return f"it took you {count} times to guess right"
+
+
+
+	
+
