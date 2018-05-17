@@ -24,8 +24,6 @@ Extras:
 def no_duplicates(a,b):
     return list(set([n for n in a if n in a and n in b]))
 
-print(no_duplicates(a,b))
-
 
 ----Extras----
 
