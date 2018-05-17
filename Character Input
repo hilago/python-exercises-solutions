@@ -5,9 +5,12 @@ name =  input('what is your name? ')
 age = int (input('what is your age?'))
 turn_100 = 100-age
 massage = f'{name} you will turn 100 in {turn_100} years'
+
 print (massage)
 
+
 #Extras:
+
 times_massage = int(input('choose a number: '))
 
 print ((massage + " ")*times_massage)
