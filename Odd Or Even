@@ -19,8 +19,21 @@ Ask the user for two numbers: one number to check (call it num) and one number t
 
 ----Solution----
 
-
+num = int(input("choose a number: "))
+if num % 2 == 0:
+    print("the number is an even number")
+else:
+    print("the number is an odd number")
 
 
 ----Extras----
+if num1 % 4 == 0:
+   print("the number is an even number and a multiple of 4")
+
+num = (int(input("choose a number:")))
+check = (int(input("choose a second number:")))
+if num % check == 0:
+   print("divides evenly")
+else:
+   print("does not divides evenly")
 
