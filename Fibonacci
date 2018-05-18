@@ -20,6 +20,6 @@ def Fibonnaci():
  Fibonnaci_list = [1,1]
  user_num=int(input("choose a number: "))
 
- for n in range(0,user_num-2):
+ for n in range(user_num-2):
      Fibonnaci_list.append(Fibonnaci_list[n]+Fibonnaci_list[n+1])
  return Fibonnaci_list
