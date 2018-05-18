@@ -1,0 +1,42 @@
+
+from:
+https://www.practicepython.org
+
+Reverse Word Order
+
+Write a program (using functions!) that asks the user for a long string containing multiple words.
+Print back to the user the same string,
+except with the words in backwards order.
+For example, say I type the string:
+
+  My name is Michele:
+  
+  the result will be:
+
+  Michele is name My
+
+
+
+----Solution----
+
+
+def backwards():
+
+  user_string = str(input("please write a sentence: "))
+  
+  list_user_string = user_string.split()
+  
+  list_user_string_backwards = list_user_string[::-1]
+  
+  string_backwards=" ".join(list_user_string_backwards)
+  
+  return string_backwards
+  
+  
+  
+  ----shorter way----
+  
+  def backwards():
+  user_string = str(input("please write a sentence: "))
+  return ' '.join(user_string.split()[::-1])
+  
