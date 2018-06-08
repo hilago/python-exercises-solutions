@@ -1,0 +1,61 @@
+from:
+https://www.practicepython.org
+
+
+Write a function that takes an ordered list of numbers
+(a list where the elements are in order from smallest to largest)
+and another number.
+The function decides whether or not the given number is
+inside the list and returns (then prints) an appropriate boolean.
+
+Extras:
+
+Use binary search.
+
+
+
+
+----Solution----
+
+
+def is_in(nums, num):
+    return num in nums
+	
+	
+	
+	or
+
+	
+
+def for_search(nums,num):
+    for n in nums:
+        if n == num:
+            return True
+    return False
+	
+	
+	
+	
+	
+	binary_search:
+	
+	
+
+
+def binary_search(nums,num):
+    first = 0
+    last =len(nums)-1
+    found = False
+
+
+    while first <= last and not found:
+        mid = (first + last)//2
+        if nums[mid] == num:
+            found = True
+        else:
+            if num < nums[mid]:
+                last = mid - 1
+            else:
+                first = mid +1
+
+    return found
